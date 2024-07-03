@@ -6,12 +6,12 @@ import com.stimply.weather.domain.model.Weather
 import com.stimply.weather.domain.model.WeatherCondition
 import com.stimply.weather.domain.model.WeatherDetail
 import com.stimply.weather.domain.model.WindDetail
-import com.stimply.weather.data.dto.CoordinateDto
-import com.stimply.weather.data.dto.VolumeDetailDto
-import com.stimply.weather.data.dto.WeatherConditionDto
-import com.stimply.weather.data.dto.WeatherDetailDto
-import com.stimply.weather.data.dto.WeatherDto
-import com.stimply.weather.data.dto.WindDetailDto
+import com.stimply.weather.data.remote.dto.CoordinateDto
+import com.stimply.weather.data.remote.dto.VolumeDetailDto
+import com.stimply.weather.data.remote.dto.WeatherConditionDto
+import com.stimply.weather.data.remote.dto.WeatherDetailDto
+import com.stimply.weather.data.remote.dto.WeatherDto
+import com.stimply.weather.data.remote.dto.WindDetailDto
 
 fun WeatherDto.toWeather(): Weather {
     return Weather(

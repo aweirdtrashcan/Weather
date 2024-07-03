@@ -1,7 +1,7 @@
 package com.stimply.weather.data.remote
 
 import com.stimply.weather.domain.model.WeatherApiUnit
-import com.stimply.weather.data.dto.WeatherDto
+import com.stimply.weather.data.remote.dto.WeatherDto
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

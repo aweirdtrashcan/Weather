@@ -1,4 +1,4 @@
-package com.stimply.weather.data.dto
+package com.stimply.weather.data.remote.dto
 
 import com.google.gson.annotations.SerializedName
 

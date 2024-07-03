@@ -2,12 +2,14 @@ package com.stimply.weather.data.local
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.stimply.weather.domain.model.Weather
+import androidx.room.TypeConverters
+import com.stimply.weather.data.remote.dto.WeatherDto
 
 @Database(
-    entities = [Weather::class],
+    entities = [WeatherDto::class],
     version = 1
 )
+@TypeConverters(WeatherConverters::class)
 abstract class WeatherDatabase: RoomDatabase() {
     abstract val dao: WeatherDao
 }

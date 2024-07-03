@@ -31,11 +31,7 @@ class MainActivity : AppCompatActivity() {
                 .build()
                 .create<WeatherApi>()
 
-            val weather = api.getWeather(-22.89f, -43.12f)
-
-            weather.body()?.let { body ->
-                println(body)
-            }
+            //val weather = api.getWeather(-22.89f, -43.12f)
         }
     }
 }
